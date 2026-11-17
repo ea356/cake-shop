@@ -204,7 +204,12 @@
       <section id="reserve" class="side-box">
         <h2 class="side-title">ご予約</h2>
         <form class="reserve-form" id="reserveForm" novalidate>
-          <p class="selected-cake" id="selectedCake" hidden></p>
+          <div class="selected-cake" id="selectedCake">
+            <p class="cart-title">選択中</p>
+            <p class="cart-empty" id="cartEmpty">ケーキの写真をクリックして選んでください</p>
+            <ul class="cart-list" id="cartList"></ul>
+            <p class="cart-total" id="cartTotal" hidden></p>
+          </div>
           <label>
             お名前<span class="req">必須</span>
             <input type="text" name="name" required autocomplete="name">
@@ -280,9 +285,14 @@
       <div class="modal-image"><img src="" alt="" id="modalImage"></div>
       <h3 class="modal-cake" id="modalCake"></h3>
       <p class="modal-price" id="modalPrice"></p>
-      <p class="modal-question" id="modalTitle">このケーキを予約しますか？</p>
+      <p class="modal-question" id="modalTitle">数量を選んでカートへ入れてください</p>
+      <div class="qty-stepper" role="group" aria-label="数量">
+        <button type="button" class="qty-btn" id="qtyMinus" aria-label="1つ減らす">−</button>
+        <output class="qty-value" id="qtyValue" aria-live="polite">0</output>
+        <button type="button" class="qty-btn" id="qtyPlus" aria-label="1つ増やす">＋</button>
+      </div>
       <div class="modal-actions">
-        <button type="button" class="btn btn-primary" id="modalReserve">予約する</button>
+        <button type="button" class="btn btn-primary" id="modalReserve" disabled>カートへ入れる</button>
         <button type="button" class="btn btn-ghost" data-close>やめる</button>
       </div>
     </div>
