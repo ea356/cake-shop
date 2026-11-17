@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ABC Cake shop の店舗紹介。季節のケーキ、オーダーメイド、配達サービスのご案内。">
+  <title>店舗紹介 | ABC Cake shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="ABC Cake shop トップへ">
+        <span class="logo-main">ABC</span>
+        <span class="logo-sub">Cake shop</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="global-nav" class="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="#about">店舗情報</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li class="has-sub">
+            <a href="#services">追加サービス</a>
+            <ul class="sub-menu">
+              <li><a href="#delivery">配達サービス</a></li>
+              <li><a href="#custom">カスタマイズ</a></li>
+              <li><a href="#gift">ギフト包装</a></li>
+            </ul>
+          </li>
+          <li><a href="#reserve" class="nav-cta">ご予約</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ヒーロー ===== -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <p class="hero-script" aria-hidden="true">Pâtisserie</p>
+      <p class="hero-eyebrow">Since 2010 &mdash; Nakameguro, Tokyo</p>
+      <span class="ornament" aria-hidden="true"></span>
+      <h1>毎日に、<br class="sp-only">ひとさじの幸せを。</h1>
+      <p class="hero-lead">素材を選び抜き、一つひとつ手づくりで。<br>ABC Cake shop は、街のちいさなパティスリーです。</p>
+      <a href="#menu" class="btn btn-primary">メニューを見る</a>
+    </div>
+  </section>
+
+  <!-- ===== メイン + サイドバー ===== -->
+  <div class="layout">
+
+    <main class="main-content">
+
+      <!-- ミッション -->
+      <section id="about" class="section">
+        <h2 class="section-title"><span>Our Mission</span>お店のミッション</h2>
+        <p class="mission-lead">
+          「特別な日も、なんでもない日も、ケーキで笑顔に。」<br>
+          私たちは、地元の農家さんから届く新鮮な卵・牛乳・季節のフルーツを使い、
+          添加物に頼らないやさしい味わいのケーキをお届けしています。
+        </p>
+        <div class="mission-grid">
+          <article class="mission-card">
+            <div class="mission-icon" aria-hidden="true">I</div>
+            <h3>素材へのこだわり</h3>
+            <p>国産小麦と地元産の卵・乳製品を使用。旬のフルーツは毎朝市場から仕入れています。</p>
+          </article>
+          <article class="mission-card">
+            <div class="mission-icon" aria-hidden="true">II</div>
+            <h3>職人の手しごと</h3>
+            <p>経験豊富なパティシエが、毎朝店内の工房で一つひとつ丁寧に仕上げます。</p>
+          </article>
+          <article class="mission-card">
+            <div class="mission-icon" aria-hidden="true">III</div>
+            <h3>地域とのつながり</h3>
+            <p>地元イベントへの出店や、食品ロス削減の取り組みを通して地域に貢献しています。</p>
+          </article>
+        </div>
+
+        <dl class="shop-info">
+          <div><dt>営業時間</dt><dd>10:00 – 19:00（イートイン L.O. 18:00）</dd></div>
+          <div><dt>定休日</dt><dd>毎週火曜日・第3水曜日</dd></div>
+          <div><dt>席数</dt><dd>イートイン 12席</dd></div>
+          <div><dt>アクセス</dt><dd>東急東横線「中目黒駅」より徒歩5分</dd></div>
+        </dl>
+      </section>
+
+      <!-- メニュー -->
+      <section id="menu" class="section">
+        <h2 class="section-title"><span>Menu</span>人気のメニュー</h2>
+
+        <div class="menu-tabs" role="tablist" aria-label="メニューカテゴリ">
+          <button role="tab" class="tab is-active" aria-selected="true" data-filter="all">すべて</button>
+          <button role="tab" class="tab" aria-selected="false" data-filter="cake">ケーキ</button>
+          <button role="tab" class="tab" aria-selected="false" data-filter="tart">タルト</button>
+          <button role="tab" class="tab" aria-selected="false" data-filter="baked">焼き菓子</button>
+        </div>
+
+        <ul class="menu-grid">
+          <li class="menu-item" data-category="cake">
+            <div class="menu-thumb thumb-1"><img src="images/photo-strawberry.png" alt="苺のショートケーキ" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>苺のショートケーキ</h3>
+              <p>ふんわりスポンジと甘酸っぱい苺の定番。</p>
+              <span class="price">¥580</span>
+            </div>
+          </li>
+          <li class="menu-item" data-category="cake">
+            <div class="menu-thumb thumb-2"><img src="images/photo-chocolate.png" alt="濃厚ガトーショコラ" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>濃厚ガトーショコラ</h3>
+              <p>カカオ70%のビターで大人な味わい。</p>
+              <span class="price">¥520</span>
+            </div>
+          </li>
+          <li class="menu-item" data-category="tart">
+            <div class="menu-thumb thumb-3"><img src="images/photo-lemon.png" alt="レモンタルト" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>レモンタルト</h3>
+              <p>瀬戸内レモンを使った爽やかなタルト。</p>
+              <span class="price">¥540</span>
+            </div>
+          </li>
+          <li class="menu-item" data-category="tart">
+            <div class="menu-thumb thumb-4"><img src="images/photo-fruit.png" alt="季節のフルーツタルト" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>季節のフルーツタルト</h3>
+              <p>旬のフルーツをたっぷりと。<em>季節限定</em></p>
+              <span class="price">¥680</span>
+            </div>
+          </li>
+          <li class="menu-item" data-category="cake">
+            <div class="menu-thumb thumb-5"><img src="images/photo-cheesecake.png" alt="ベイクドチーズケーキ" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>ベイクドチーズケーキ</h3>
+              <p>香ばしい焼き色となめらかな口どけ。</p>
+              <span class="price">¥500</span>
+            </div>
+          </li>
+          <li class="menu-item" data-category="baked">
+            <div class="menu-thumb thumb-6"><img src="images/photo-donut.png" alt="グレーズドーナツ" width="150" height="140" loading="lazy"></div>
+            <div class="menu-body">
+              <h3>グレーズドーナツ</h3>
+              <p>ふんわり生地に甘いグレーズをまとわせて。</p>
+              <span class="price">¥280</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 提供サービス -->
+      <section id="services" class="section">
+        <h2 class="section-title"><span>Services</span>提供サービス</h2>
+        <div class="service-list">
+          <article id="delivery" class="service-card">
+            <div class="service-icon" aria-hidden="true">01</div>
+            <div>
+              <h3>配達サービス</h3>
+              <p>店舗から半径5km以内へ、保冷車でお届けします。ご注文は前日18時まで。</p>
+              <ul class="service-points">
+                <li>配達料：¥500（¥5,000以上で無料）</li>
+                <li>時間指定：11時〜19時（2時間単位）</li>
+              </ul>
+            </div>
+          </article>
+          <article id="custom" class="service-card">
+            <div class="service-icon" aria-hidden="true">02</div>
+            <div>
+              <h3>カスタマイズケーキ</h3>
+              <p>誕生日・記念日・ウェディングなど、サイズやデザイン、メッセージを自由にオーダーいただけます。</p>
+              <ul class="service-points">
+                <li>写真プリント・キャラクターデコ対応</li>
+                <li>アレルギー対応（卵・乳不使用）もご相談ください</li>
+                <li>ご注文は3日前まで</li>
+              </ul>
+            </div>
+          </article>
+          <article id="gift" class="service-card">
+            <div class="service-icon" aria-hidden="true">03</div>
+            <div>
+              <h3>ギフト包装・のし対応</h3>
+              <p>ギフト用のお菓子はご用途に合わせてラッピング・のし掛けを無料で承ります。</p>
+              <ul class="service-points">
+                <li>お受け取りは店舗のみ（発送は行っておりません）</li>
+                <li>法人様向けまとめ注文も対応</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== サイドバー ===== -->
+    <aside class="sidebar" aria-label="お問い合わせ・ご予約">
+
+      <section id="reserve" class="side-box">
+        <h2 class="side-title">ご予約</h2>
+        <form class="reserve-form" id="reserveForm" novalidate>
+          <p class="selected-cake" id="selectedCake" hidden></p>
+          <label>
+            お名前<span class="req">必須</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            受取日<span class="req">必須</span>
+            <input type="date" name="date" id="reserveDate" required>
+          </label>
+          <label>
+            ご用件
+            <select name="type">
+              <option value="pickup">店頭受取</option>
+              <option value="delivery">配達</option>
+              <option value="custom">カスタマイズケーキ</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">予約する</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="side-box">
+        <h2 class="side-title">お問い合わせ</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">電話</span>
+            <a href="tel:0312345678">03-1234-5678</a>
+            <small>受付 10:00〜18:00</small>
+          </li>
+          <li>
+            <span class="contact-label">メール</span>
+            <a href="mailto:info@abc-cake.example">info@abc-cake.example</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="side-box">
+        <h2 class="side-title">SNS</h2>
+        <ul class="sns-list">
+          <li><a href="#" class="sns sns-ig" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" class="sns sns-x" aria-label="X（旧Twitter）">X</a></li>
+          <li><a href="#" class="sns sns-line" aria-label="LINE公式アカウント">LINE</a></li>
+        </ul>
+        <p class="side-note">新作・限定ケーキの情報を毎週お届け中！</p>
+      </section>
+    </aside>
+  </div>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">ABC <span>Cake shop</span></p>
+        <p>株式会社エービーシー洋菓子店</p>
+      </div>
+      <address class="footer-address">
+        〒153-0051 東京都目黒区ABC 1-1-1 ABCビル1F<br>
+        TEL：<a href="tel:0312345678">03-1234-5678</a>　/
+        MAIL：<a href="mailto:info@abc-cake.example">info@abc-cake.example</a>
+      </address>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> ABC Cake shop. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" aria-label="ページの先頭へ戻る">↑</button>
+
+  <!-- ===== 予約確認ポップアップ ===== -->
+  <div class="modal" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" aria-label="閉じる" data-close>&times;</button>
+      <p class="modal-script" aria-hidden="true">Réservation</p>
+      <div class="modal-image"><img src="" alt="" id="modalImage"></div>
+      <h3 class="modal-cake" id="modalCake"></h3>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-question" id="modalTitle">このケーキを予約しますか？</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-primary" id="modalReserve">予約する</button>
+        <button type="button" class="btn btn-ghost" data-close>やめる</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
